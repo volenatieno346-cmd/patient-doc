@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="468.0" prefWidth="372.0" style="-fx-background-radius: 50; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginController.java">
+   <children>
+      <Label alignment="CENTER" layoutX="42.0" layoutY="38.0" prefHeight="35.0" prefWidth="306.0" text="LOGIN PAGE">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="80.0" layoutY="88.0" prefHeight="193.0" prefWidth="218.0" spacing="30.0">
+         <children>
+            <TextField promptText="USERNAME" style="-fx-background-radius: 15;" />
+            <TextField layoutX="10.0" layoutY="10.0" promptText="EMPLOYEEID" style="-fx-background-radius: 15;" />
+            <TextField layoutX="10.0" layoutY="35.0" promptText="PASSWORD" style="-fx-background-radius: 15;" />
+         </children>
+      </VBox>
+      <HBox layoutX="57.0" layoutY="289.0" prefHeight="53.0" prefWidth="289.0" spacing="39.0">
+         <children>
+            <Button mnemonicParsing="false" style="-fx-background-radius: 20;" text="CLEAR" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="REGISTER" />
+            <Button layoutX="62.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="LOGIN" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

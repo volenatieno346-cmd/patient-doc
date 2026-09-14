@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="17.0" layoutY="82.0" prefHeight="46.0" prefWidth="567.0" spacing="20.0">
+         <children>
+            <TextField promptText="USERNAME" />
+            <TextField promptText="PATIENTID" />
+            <TextField promptText="AGE" />
+         </children></HBox>
+      <TextField alignment="CENTER" layoutX="17.0" layoutY="14.0" prefHeight="37.0" prefWidth="573.0" text="PATIENT ADMISION FORM">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </TextField>
+      <HBox layoutX="131.0" layoutY="208.0" prefHeight="60.0" prefWidth="377.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" text="CLEAR" />
+            <Button mnemonicParsing="false" text="SAVE" />
+            <Button mnemonicParsing="false" text="SEARCH" />
+            <Button lineSpacing="20.0" mnemonicParsing="false" text="EXIT" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
