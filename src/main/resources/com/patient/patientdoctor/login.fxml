@@ -4,27 +4,30 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="468.0" prefWidth="372.0" style="-fx-background-radius: 50; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginController.java">
+<AnchorPane prefHeight="468.0" prefWidth="372.0" style="-fx-background-radius: 50; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.patient.patientdoctor.loginController">
    <children>
       <Label alignment="CENTER" layoutX="42.0" layoutY="38.0" prefHeight="35.0" prefWidth="306.0" text="LOGIN PAGE">
          <font>
             <Font name="Arial Black" size="18.0" />
          </font>
       </Label>
-      <VBox layoutX="80.0" layoutY="88.0" prefHeight="193.0" prefWidth="218.0" spacing="30.0">
+      <VBox layoutX="80.0" layoutY="88.0" prefHeight="178.0" prefWidth="218.0">
          <children>
-            <TextField promptText="USERNAME" style="-fx-background-radius: 15;" />
-            <TextField layoutX="10.0" layoutY="10.0" promptText="EMPLOYEEID" style="-fx-background-radius: 15;" />
-            <TextField layoutX="10.0" layoutY="35.0" promptText="PASSWORD" style="-fx-background-radius: 15;" />
+            <TextField fx:id="username" promptText="USERNAME" style="-fx-background-radius: 15;" />
+            <Label fx:id="usenamewarning" prefHeight="29.0" prefWidth="210.0" textAlignment="CENTER" />
+            <TextField fx:id="employeeid" layoutX="10.0" layoutY="10.0" promptText="EMPLOYEEID" style="-fx-background-radius: 15;" />
+            <Label fx:id="employeeidwarning" prefHeight="37.0" prefWidth="213.0" />
+            <TextField fx:id="password" layoutX="10.0" layoutY="35.0" promptText="PASSWORD" style="-fx-background-radius: 15;" />
+            <Label fx:id="passwordwarning" prefHeight="35.0" prefWidth="215.0" textAlignment="CENTER" />
          </children>
       </VBox>
       <HBox layoutX="57.0" layoutY="289.0" prefHeight="53.0" prefWidth="289.0" spacing="39.0">
          <children>
-            <Button mnemonicParsing="false" style="-fx-background-radius: 20;" text="CLEAR" />
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="REGISTER" />
-            <Button layoutX="62.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="LOGIN" />
+            <Button fx:id="clear" mnemonicParsing="false" style="-fx-background-radius: 20;" text="CLEAR" />
+            <Button fx:id="register" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="REGISTER" />
+            <Button fx:id="login" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#onLoginClick" style="-fx-background-radius: 20;" text="LOGIN" />
          </children>
       </HBox>
+      <Label fx:id="error" layoutX="46.0" layoutY="332.0" prefHeight="69.0" prefWidth="251.0" textAlignment="CENTER" />
    </children>
 </AnchorPane>
